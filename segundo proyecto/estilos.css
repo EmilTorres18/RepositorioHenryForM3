@@ -1,0 +1,102 @@
+body {
+    background-color: black;
+}
+
+#imagen {
+    margin-top: 1em;
+    width: 200px;
+    margin-left: 2em;
+}
+
+.title {
+    font-size: 40px;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+.logo {
+    width: 200px;
+    height:200px
+}
+
+#principal {
+    font-size: 50px;
+    color: white;
+    border: 10px solid white;
+    border-radius: 10%;
+    width: 65%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin: auto;
+    padding: 5vw; /*viewport width*/
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    /*align-items: que alinee los elementos de alguna forma*/
+    align-items: center;
+}
+
+#titulos {
+    font-size: 40px;
+    font-family: cursive;
+    border: 5px solid white;
+    border-radius: 5%;
+    width: fit-content;
+    padding: 6px;
+}
+
+.texto {
+ 
+    font-family:cursive;
+    font-size: 40px;
+    color: white;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+
+.cards {
+    /*borde de 2pixeles cada linea, color sólido, de color blanco*/
+    border:2px solid white;
+    /*ancho del borde. fit-content: lo que abarque el contenido*/
+    width:fit-content;
+    /*separación del borde arriba, derecha, abajo e izquierda*/
+    padding: 2em 2em 3em 2em;
+    /*Borde redondeado*/
+    border-radius: 15%;
+    display:flex;
+    flex-direction:column;
+    /*gap un pequeño espacio entre un tipo de contenido de otro*/
+    gap: 1em;
+}
+
+.cards:hover {
+    /*al pasar el mouse por encima*/
+    background-color: rgb(37, 37, 37);
+}
+
+#cards-container { /*contenedor de contenido*/
+    width: 85%; /* de ancho, el 85% de la pantalla.*/
+    margin: auto; /*margen automatico para que esté centrado*/
+    margin-top: 2em;/* margen de el contenido de arriba*/
+    margin-bottom: 2em;
+    border: 5px solid white; /*borde: medidas y color*/
+    border-radius: 5%; /* borde redondeado*/
+    padding: 2em; /* que el contenido se despegue del borde; si se aplica sólo un valor, va para todos los lados*/
+    /*hora de posicionar los elementos*/
+    display:flex; /* que siga la logica de flex*/
+    /*Ahora podemos establecer propiedades que tienen sentido únicamente si estamos trabajando con flex*/
+    /* por defecto colocará los elementos en fila, por eso debemos especificar*/
+    /* row = fila ; column= columna*/
+    flex-direction: row;
+    /*para que tengan una distancia, posición o espacio entre ellos; comandos para justify-content:
+    >flex-start: todos los elementos pegados al inicio o a la izquierda.
+    >flex-end: todos los elementos pegados al final o a la derecha.
+    >space-around: cada uno de los elementos tendrá a su alrededor siempre la misma distancia (considerando el borde).
+    >space-between: cada uno de los elementos tendrá a su alrededor siempre la misma distancia entre ellos(sin considerar el borde).
+    >space-evenly: todos los elementos tendrán a su alrededor la misma distancia considerando el borde y su distancia entre sí */
+    justify-content: space-evenly;
+
+}
